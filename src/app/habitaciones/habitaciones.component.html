@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12 text-center">
+            <h4>HABITACIONES</h4>
+            <hr>
+        </div>
+    </div>
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col" *ngFor="let habitacion of listahabitaciones">
+            <div class="card h-100">
+                <h4 class="text-center text-muted my-3">{{habitacion.nombre}}</h4>
+                <img src="{{habitacion.fotografia}}" alt="" class="img-fluid w-100 h-100">
+            </div>
+        </div>
+
+    </div>
+</div>
